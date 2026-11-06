@@ -8,7 +8,7 @@ const Home = () => {
   useEffect(() => {
     const consultarApi = async () => {
       try {
-        const response = await fetch("http://localhost:5001/api/pizzas");
+        const response = await fetch("http://localhost:5000/api/pizzas");
         const data = await response.json();
         setPizzas(data);
       } catch (error) {
